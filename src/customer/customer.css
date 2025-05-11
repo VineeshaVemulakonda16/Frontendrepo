@@ -1,0 +1,265 @@
+form {
+  margin: auto;
+  width: 350px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='number'],
+input[type='email'],
+select,
+input[type='date'],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button[type='submit'] {
+  background: linear-gradient(45deg, #000, #333);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  transition: 0.3s;
+}
+
+button[type='submit']:hover {
+  background: linear-gradient(45deg, #333, #555);
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f0f0;
+}
+
+.profile-card {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 350px;
+  text-align: center;
+  border: 3px solid #000;
+  border-radius: 8px;
+  padding: 15px;
+  background: white;
+}
+
+.logoutButton {
+  background: #dc3545;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logoutButton:hover {
+  background: #b02a37;
+}
+
+.logoutButton:focus {
+  outline: none;
+}
+
+.event-container {
+  padding: 20px;
+}
+
+.event-heading {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-table th,
+.event-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.event-table thead {
+  background-color: #f2f2f2;
+}
+
+.event-table input[type="text"] {
+  width: 90%;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.book-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.book-button:hover {
+  background-color: #0056b3;
+}
+
+.customer-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  font-family: 'Roboto', sans-serif;
+}
+
+.customer-container {
+  background-color: #ffffff;
+  padding: 50px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  transition: transform 0.3s ease;
+}
+
+.customer-container:hover {
+  transform: translateY(-5px);
+}
+
+.customer-container h2 {
+  color: #006064;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.customer-container p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.customer-img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid #006064;
+}
+
+.customer-bg {
+  background-image: url('/soon.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 90vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the car listings wrapper */
+.car-listings-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px; /* Adjust this value to your desired maximum width */
+  margin: 0 auto; /* This will center the wrapper horizontally */
+}
+
+/* Styles for the car listings */
+.car-listing {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: white;
+  display: flex;
+  align-items: stretch; /* Make items stretch vertically */
+}
+
+.car-listing img {
+  max-width: 450px; /* INCREASED IMAGE WIDTH - Adjust this value as needed */
+  width: 100%; /* To ensure it takes full width up to max-width */
+  height: auto; /* IMPORTANT: Changed from 100% to auto to maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
+.car-details-container {
+  flex-grow: 1; /* Allow details to take up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Keep button at the bottom of this container */
+}
+
+.car-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.car-details {
+  margin-bottom: 3px;
+  color: #555;
+}
+
+.car-details strong {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.rent-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  margin-top: 15px; /* Added margin above the button */
+  align-self: flex-start; /* Keep button aligned to the start */
+}
